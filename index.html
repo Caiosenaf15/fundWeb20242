@@ -3,9 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <h1>Sistema de Versionamento - Git</h1>
+    <div id="blocoCores">
+        <button onclick="mudarCor('red')">Red</button>
+        <button onclick="mudarCor('green')">Green</button>
+        <button onclick="mudarCor('blue')">Blue</button>
+        <button onclick="mudarCor('white')">Reset</button>
+    </div>
+    
+    <script>
+        function mudarCor(cor) {
+            var a = cor
+            document.body.style.backgroundColor = a 
+            document.body.style.transition = '0.5s'
+            if(a != 'white'){
+                document.body.style.color = 'white'
+            } else {
+                document.body.style.color = 'black'
+            }
+        }
+    </script>
 </body>
 </html>
