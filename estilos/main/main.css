@@ -1,10 +1,19 @@
 @charset "UTF-8";
 main .section1{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+section1{
     display:flex;
     box-sizing: border-box;
     flex-direction: row;
     width: 100%;
     margin-bottom: 40px;
+    padding-top: 30px;
 }
 
 main p{
